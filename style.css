@@ -29,7 +29,7 @@ nav ul li{
   display: inline-block;
   margin-right: 20px;
 }
-/* ---------------------hr1-Font------------------ */
+
 h1{
   font-family: 'Times New Roman';
   color: black;
@@ -42,7 +42,7 @@ p{
   font-size: 20px;
   font-weight: bolder;
 }
-/* -------------------------------------template form--------------------- */
+
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -85,17 +85,6 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   background-color: #3e8e41;
 }
-
-/* <!-- ----------------Booking Schedule --------------> */
-
-/* h6{
-  text-align: center;
-  font-family: 'Times New Roman';
-  font-size: 15px;
-  font-weight: bolder; */
- 
-/* } */
-
 .pitch-container {
   display: flex;
   flex-wrap: wrap;
@@ -191,9 +180,6 @@ input[type="submit"]:active {
   border-radius: 30px;
 } */ */
 
-/* ---------Confirm Schedul list-------------- */
-
-/* ---------------------Featured Products------------- */
 h2{
   text-align: center;
   
