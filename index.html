@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Football Pitch Booking Template</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@329&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,900&display=swap" rel="stylesheet">">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  
+
+  <div class="header">
+  <div class="container">
+  <div class="navbar">
+    <div class="Logo">
+      <img src="/Image Football/Logo-booking-f.png"  width="200px">
+
+    </div>
+    <nav>
+      <ul id="MenuItems">
+        <em><li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+        <li><a href="">Account</a></li></em>
+      </ul>
+    </nav>
+    <img src="/Image Football/Cart-removebg-preview.png" width="30px" height="30px">
+    <img src="/Image Football/Manu-Icon.png" class="menu-icon" onclick="menutoggle()">
+ </div>
+ <div class="row">
+  <div class="col-2">
+    <em><h1>Welcome to our Football Pitch Booking System</h1></em>
+    <p><em>Book your pitch now and enjoy a game with your friends!</em></p>
+    <!-- <a href="" class="btn">Explore Now &#8594;</a> -->
+  </div>
+  <div class="col-2">
+    <img src="/Image Football/Cover-Fooball 2024.png" width="2000px">
+  </div>
+</div>
+<div>
+  <form action="booking_handler.php" method="POST">
+    <em><label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="duration">Duration (in hours):</label>
+    <input type="number" id="duration" name="duration" min="1" max="5" required><br><br>
+    
+    <input type="submit" value="Book Now">
+    
+  </form>
+  
+  <div id="booking-status"></em>
+   <!-- --------------Viwe Schedul ------------------>
+</div>
+<div>
+  
+</div>
+</div>
+</div>
+
+<!-- ----------------Booking Schedule ------------ -->
+<div class="pitch-container">
+  <div class="pitch">
+    <img src="/Image Football/File Zoon A-A.jpg" alt="Football Pitch A">
+    <div class="popup">A<br>10:00 AM - 12:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon B-B.jpg" alt="Football Pitch B">
+    <div class="popup">B<br>1:00 PM - 3:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon C-C.jpg" alt="Football Pitch C">
+    <div class="popup">C<br>4:00 PM - 6:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon D-D.jpg" alt="Football Pitch D">
+    <div class="popup">D<br>7:00 PM - 9:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon E-E.jpg" alt="Football Pitch E">
+    <div class="popup">E<br>10:00 AM - 12:00 PM, 4:00 PM - 6:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon F-F.jpg" alt="Football Pitch F">
+    <div class="popup">F<br>1:00 PM - 3:00 PM, 7:00 PM - 9:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon G-G.jpg" alt="Football Pitch G">
+    <div class="popup">G<br>1:00 PM - 3:00 PM, 7:00 PM - 9:00 PM</div>
+  </div>
+  <div class="pitch">
+    <img src="/Image Football/File Zoon H-H.jpg" alt="Football Pitch H">
+    <div class="popup">H<br>1:00 PM - 3:00 PM, 7:00 PM - 9:00 PM</div>
+  </div>
+</div>
+<!-- -------------------featured products ------------------>
+<div class="small-container">
+  <h2 class="title">Featured Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="/Image Football/Nike Air Zoom.jpg" alt="">
+      <h4>Nike Air Zoom Pro</h4>
+      <div class="rating">
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star-half-alt red"></i>
+      </div>
+      <em><p>$45.00</p></em>
+    </div>
+    <div class="col-4">
+      <img src="/Image Football/Puma-Sport.jpg" alt="">
+      <h4>Puma Sport Shao</h4>
+      <div class="rating">
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star-half-alt red"></i>
+      </div>
+      <em><p>$35.00</p></em>
+    </div>
+    <div class="col-4">
+      <img src="/Image Football/Misunuk Sport Shao.jpg" alt="">
+      <h4>Misonuk football shoes</h4>
+      <div class="rating">
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star-half-alt red"></i>
+      </div>
+      <em><p>$30.00</p></em>
+    </div>
+    <div class="col-4">
+      <img src="/Image Football/Real Madrid T-Short.jpg" alt="">
+      <h4>Real Madrid Tshirt</h4>
+      <div class="rating">
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star-half-alt red"></i>
+      </div>
+      <em><p>$15.00</p></em>
+    </div>
+  </div>
+  <!-------------------Latest Products -------------------->
+
+  <h2 class="title">Latest Products</h2>
+  <div class="row">
+    <div class="col-4">
+      <img src="/Image Football/Manu T-Short.jpg" alt="">
+      <h4>Manu Tshirt</h4>
+      <div class="rating">
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star red"></i>
+        <i class="fas fa-star-half-alt red"></i>
+      </div>
+      <em><p>$15.00</p></em>
+    </div>
+       <div class="col-4">
+        <img src="/Image Football/Asernal T-Short.jpg" alt="">
+        <h4>Arsenal Tshirt</h4>
+        <div class="rating">
+          <i class="fas fa-star red"></i>
+          <i class="fas fa-star red"></i>
+          <i class="fas fa-star red"></i>
+          <i class="fas fa-star red"></i>
+          <i class="fas fa-star-half-alt red"></i>
+        </div>
+        <em><p>$15.00</p></em>
+      </div>
+          <div class="col-4">
+          <img src="/Image Football/Mancity T-Short.jpg" alt="">
+          <h4>Mancity Tshirt</h4>
+          <div class="rating">
+            <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+          </div>
+          <em><p>$15.00</p></em>
+        </div>
+              <div class="col-4">
+            <img src="/Image Football/Liverpool T-Short.jpg" alt="">
+            <h4>Liverpool Tshirt</h4>
+            <div class="rating">
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+            </div>
+            <em><p>$15.00</p></em>
+          </div>
+          <div class="col-4">
+            <img src="/Image Football/Addidas-Sport.jpg" alt="">
+            <h4>Addidas-Sport</h4>
+            <div class="rating">
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+            </div>
+            <em><p>$60.00</p></em>
+          </div>
+          <div class="col-4">
+            <img src="/Image Football/Cross-Border-Lowtop.jpg" alt="">
+            <h4>Cross-Border-Lowtop</h4>
+            <div class="rating">
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+            </div>
+            <em><p>$65.00</p></em>
+          </div>
+          <div class="col-4">
+            <img src="/Image Football/NB-Sport Shao.jpg" alt="">
+            <h4>NB-Sport Shao</h4>
+            <div class="rating">
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+            </div>
+            <em><p>$70.00</p></em>
+          </div>
+          <div class="col-4">
+            <img src="/Image Football/Mess Sport-Shao.jpg" alt="">
+            <h4>Messi Sport-Shao</h4>
+            <div class="rating">
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star red"></i>
+              <i class="fas fa-star-half-alt red"></i>
+            </div>
+            <em><p>$140.00</p></em>
+          </div>
+         
+  </div>
+</div>
+
+<!---------------------- footer ------------->
+<div class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col-1">
+      <h3><em>Sport brings health</em></h3>
+      <p><em>Play sports to be safe from drugs</em></p>
+      <div class="app-logo">
+        <!-- <img src="/Image Football/Play-StorApp.png">
+        <img src="/Image Football/App-StorApp.png"> -->
+      </div>
+     </div>
+     <div class="footer-col-2">
+      <img src="/Image Football/Logo-booking-f.png">
+      <p><em>Play football for health <br> and play football for fun</em></p>
+   </div>
+   <div class="footer-col-3">
+    <h3>Usefull Links</h3>
+    <ul>
+      <li>Coupons</li>
+      <li>Blog Post</li>
+      <li>Return Policy</li>
+      <li>Join Affiliate</li>
+    </ul>
+  </div>
+  <div class="footer-col-4">
+    <h3>Follow Us</h3>
+    <ul>
+      <li>Facebook</li>
+      <li>Twitter</li>
+      <li>Instagram</li>
+      <li>YouTube</li>
+    </ul>
+  </div>
+ </div>
+ <hr>
+ <p class="copyright"><em>Mr. Phearak Chhay</em></p>
+</div>
+<!-- ---------------js for toggle menu ---------->
+<!-- <script>
+  function menutoggle() {
+    var MenuItems = document.getElementById("MenuItems");
+    if (MenuItems.style.maxHeight === "0px" || MenuItems.style.maxHeight === "") {
+      MenuItems.style.maxHeight = "200px";
+    } else {
+      MenuItems.style.maxHeight = "0px";
+    }
+  }
+</script>
+
+<script>
+  // Show booking modal
+document.getElementById("viewScheduleBtn").addEventListener("click", function() {
+  document.getElementById("bookingModal").style.display = "block";
+});
+
+// Close booking modal
+document.getElementById("bookingClose").addEventListener("click", function() {
+  document.getElementById("bookingModal").style.display = "none";
+});
+
+// Confirm booking action (this is just an example, you can replace it with your actual booking logic)
+document.getElementById("confirmBookingBtn").addEventListener("click", function() {
+  alert("Booking confirmed!");
+  document.getElementById("bookingModal").style.display = "none";
+});
+</script>
+<script>
+  
+</script>
+</body>
+<script>
+  const pitches = document.querySelectorAll('.pitch');
+const modal = document.getElementById('modal');
+const closeBtn = document.querySelector('.close');
+
+pitches.forEach(pitch => {
+  pitch.addEventListener('click', () => {
+    const pitchName = pitch.querySelector('.popup').textContent;
+    showModal(pitchName);
+  });
+});
+
+closeBtn.addEventListener('click', () => {
+  closeModal();
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+function showModal(pitchName) {
+  const timeSlots = generateTimeSlots(); // You need to implement this function to get available time slots for the selected pitch
+  const pitchNameElement = document.getElementById('pitch-name');
+  const timeSlotsList = document.getElementById('time-slots');
+
+  pitchNameElement.textContent = pitchName;
+  timeSlotsList.innerHTML = '';
+
+  timeSlots.forEach(slot => {
+    const li = document.createElement('li');
+    li.textContent = slot;
+    timeSlotsList.appendChild(li);
+  });
+
+  modal.style.display = 'block';
+}
+
+function closeModal() {
+  modal.style.display = 'none';
+}
+
+function generateTimeSlots() {
+  // Dummy implementation, you need to replace this with your actual logic to fetch available time slots
+  return ['10:00 - 11:00', '11:00 - 12:00', '12:00 - 13:00', '13:00 - 14:00'];
+}
+</script> -->
+<footer>
+  
+</footer>
+</html>
